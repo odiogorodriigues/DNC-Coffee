@@ -15,6 +15,12 @@
     }
 }
 
+@media screen and (max-height: 872px) {
+    section img {
+        height: 300px;
+        object-fit: none!important;
+    }
+}
 
 .card-body {
     display: flex !important;
