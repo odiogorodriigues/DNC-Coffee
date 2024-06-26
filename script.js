@@ -13,27 +13,3 @@ for (var i = 0; i < cards.length; i++){
         button.style.display = 'none';
     })
 }
-
-
-/// Modal
-
-let button = document.getElementById('abrirModal');
-let modal =  document.getElementById('janela-modal')
-let buttonClose = document.getElementById('fechar')
-
-button.onclick = function() {
-    modal.showModal()
-    modal.style.display = 'flex'
-}
-
-buttonClose.onclick = function closeModal() {
-    modal.close()
-    modal.style.display = ''
-}
-
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') {
-        modal.close()
-        modal.style.display = ''
-    }
-});
